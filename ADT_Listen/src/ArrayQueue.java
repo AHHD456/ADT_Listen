@@ -2,11 +2,11 @@
 public class ArrayQueue {
 
 	int tos;
-	int arrayqueue[];
+	Object arrayqueue[];
 	int groeﬂe;
 	
 	public ArrayQueue(int groeﬂe) {
-		arrayqueue = new int[groeﬂe];
+		arrayqueue = new Object[groeﬂe];
 		tos = -1;
 		this.groeﬂe = groeﬂe;
 	}
@@ -17,24 +17,33 @@ public class ArrayQueue {
 		
 	}
 	
+	 public void concat(ArrayQueue queue2) {
+	  while(queue2.Empty() == false) {
+		  tos++;
+		  arrayqueue[tos] =queue2.Front();
+		  queue2.Dequeue();
+		  
+	  }}
+	
 	public void Dequeue() {
 		for(int i= 0; i< (groeﬂe-1); i++) {
 			arrayqueue[i] = arrayqueue[i+1];
 		}
+		arrayqueue[tos] = null;
 		tos--;
 	}
 	
-	public int Front() {
+	public Object Front() {
 		 return arrayqueue[0];
 		
 	}
 	
 	public boolean Empty() {
-		if(arrayqueue[0] == 0) {
+		if(arrayqueue[0] == null) {
 			return true;
 		}else {
 			return false;
 		}
-		
 	}
+   
 }

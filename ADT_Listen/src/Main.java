@@ -4,6 +4,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		ArrayQueue Queueii = new ArrayQueue(100);
+		ArrayQueue Queueiii = new ArrayQueue(100);
 		
 		System.out.println(Queueii.Empty());
 		Queueii.Enqueue(102);
@@ -16,8 +17,15 @@ public class Main {
 		Queueii.Dequeue();
 		System.out.println(Queueii.Front());
 		
+		for(int i =19; i > 0; i--) {
+			Queueiii.Enqueue(i);
+		}
 		
-		
+		Queueii.concat(Queueiii);
+		Queueii.Dequeue();
+		Queueii.Dequeue();
+		Queueii.Dequeue();
+		System.out.println(Queueii.Front());
 		
 		/*
 		ArrayStack Stacki = new ArrayStack(100);

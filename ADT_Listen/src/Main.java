@@ -3,6 +3,23 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		ArrayQueue Queueii = new ArrayQueue(100);
+		
+		System.out.println(Queueii.Empty());
+		Queueii.Enqueue(102);
+		Queueii.Enqueue(992);
+		for(int i = 0; i<19; i++) {
+			Queueii.Enqueue(i);
+		}
+		System.out.println(Queueii.Front());
+		Queueii.Dequeue();
+		Queueii.Dequeue();
+		System.out.println(Queueii.Front());
+		
+		
+		
+		
+		/*
 		ArrayStack Stacki = new ArrayStack(100);
 		ArrayStack tmp =new ArrayStack(100);
 		ArrayStack copy =new ArrayStack(100);
@@ -27,7 +44,7 @@ public class Main {
 		}
 		System.out.println(Stacki.top());
 		System.out.println(copy.top());
-		
+		*/
 		
 		
 		/*

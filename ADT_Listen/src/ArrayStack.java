@@ -4,8 +4,8 @@ public class ArrayStack {
 	private int stack[];
 	private int index;
 	
-	public ArrayStack(int groeﬂe) {
-		stack =new int[groeﬂe];
+	public ArrayStack(int groese) {
+		stack =new int[groese];
 		index = -1;
 	}
 	

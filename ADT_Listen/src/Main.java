@@ -26,6 +26,7 @@ public class Main {
 		Queueii.Dequeue();
 		Queueii.Dequeue();
 		System.out.println(Queueii.Front());
+		System.out.println(Queueii.search(17));
 		
 		/*
 		ArrayStack Stacki = new ArrayStack(100);
@@ -42,7 +43,7 @@ public class Main {
 			tmp.push(Stacki.top());
 			Stacki.pop();
 		}
-		System.out.println("tmprückcopy");
+		System.out.println("tmprï¿½ckcopy");
 		while(tmp.empty() ==false) {
 			System.out.println(tmp.top());
 			int x = tmp.top();
@@ -61,7 +62,7 @@ public class Main {
 		ListenElement element2 = new ListenElement(42);
 		Queue myQueue = new Queue(3);
 		myQueue.enqueue(6);
-		System.out.println("Größe: " + myQueue.getGroesse());
+		System.out.println("Grï¿½ï¿½e: " + myQueue.getGroesse());
 
 		try {
 			myQueue.dequeue();
@@ -70,7 +71,7 @@ public class Main {
 			System.out.println("Die ist leer!");
 		}
 
-		System.out.println("Größe: " + myQueue.getGroesse());
+		System.out.println("Grï¿½ï¿½e: " + myQueue.getGroesse());
 */
 	}
 }
@@ -83,7 +84,7 @@ public class Main {
  * 
  * System.out.println("Der Stapel ist leer!"); }
  * 
- * System.out.println("Größe: " + stack.getGroesse()); try { stack.pop(); }
+ * System.out.println("Grï¿½ï¿½e: " + stack.getGroesse()); try { stack.pop(); }
  * catch (Exception e) {
  * 
  * System.out.println("Der Stapel ist leer!"); }

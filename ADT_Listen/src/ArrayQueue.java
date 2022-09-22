@@ -45,16 +45,10 @@ public class ArrayQueue {
 		while((arrayqueue[0] == null) == false) {
 			tmp.Enqueue(arrayqueue[0]);
 			lookqueue.Enqueue(arrayqueue[0]);
-			for(int i= 0; i< (groese-1); i++) {
-				arrayqueue[i] = arrayqueue[i+1];
-			}
-			arrayqueue[tos] = null;
-			tos--;
+			Dequeue();
 		}
-		System.out.println(arrayqueue[0]);
 		while(tmp.Empty() == false) {
-			tos ++;
-			arrayqueue[tos] = tmp.Front();
+			Enqueue(tmp.Front());
 			tmp.Dequeue();
 		}
 		while(lookqueue.Empty() == false) {

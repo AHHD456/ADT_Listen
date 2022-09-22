@@ -26,7 +26,7 @@ public class Main {
 		Queueii.Dequeue();
 		Queueii.Dequeue();
 		System.out.println(Queueii.Front());
-		System.out.println(Queueii.search(17));
+		System.out.println(Queueii.search(99));
 		
 		/*
 		ArrayStack Stacki = new ArrayStack(100);

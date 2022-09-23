@@ -3,6 +3,28 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		BuildTree meinBaumchen = new BuildTree();
+		meinBaumchen.root.right.show();
+		meinBaumchen.root.insert(75);
+		meinBaumchen.root.left.right.show();
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/*
 		ArrayQueue Queueii = new ArrayQueue(100);
 		ArrayQueue Queueiii = new ArrayQueue(100);
 		
@@ -27,7 +49,7 @@ public class Main {
 		Queueii.Dequeue();
 		System.out.println(Queueii.Front());
 		System.out.println(Queueii.search(99));
-		
+		*/
 		/*
 		ArrayStack Stacki = new ArrayStack(100);
 		ArrayStack tmp =new ArrayStack(100);

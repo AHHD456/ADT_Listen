@@ -8,9 +8,17 @@ public class Main {
 		meinBaumchen.root.insert(75);
 		meinBaumchen.root.left.right.show();
 		
-		
-		
-		
+		PQueue leitstelle = new PQueue();
+		leitstelle.insert(new Notruf(1,3,14,35,33,"Amoklauf"));
+		leitstelle.insert(new Notruf(2,2,18,33,21,"Rechte Party im Brandeck"));
+		leitstelle.insert(new Notruf(3,1,22,44,22,"Hilfeleistung Linke Demo"));
+		(leitstelle.Max()).anzeigen();
+		leitstelle.delete();
+		(leitstelle.Max()).anzeigen();
+		leitstelle.delete();
+		(leitstelle.Max()).anzeigen();
+		leitstelle.delete();
+		System.out.println(leitstelle.Empty());
 		
 		
 		

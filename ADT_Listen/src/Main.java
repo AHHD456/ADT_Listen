@@ -16,7 +16,7 @@ public class Main {
 		leitstelle.delete();
 		(leitstelle.Max()).anzeigen();
 		leitstelle.delete();
-		(leitstelle.Max()).anzeigen();
+		leitstelle.Max().anzeigen();
 		leitstelle.delete();
 		System.out.println(leitstelle.Empty());
 		
